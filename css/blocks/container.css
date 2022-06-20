@@ -1,0 +1,9 @@
+.container {
+  position: relative;
+  width: 93.5%;
+  max-width: 940px;
+  margin: 0 auto;
+}
+.container--full-height {
+  height: 100%;
+}

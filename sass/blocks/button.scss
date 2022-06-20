@@ -1,0 +1,16 @@
+.button {
+  display: inline-block;
+  padding: 16px 42.5px;
+  border-radius: 100px;
+  background-color: $red;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &--reset {
+    line-height: 19px;
+    padding: 2px;
+    background-color: transparent;
+    text-transform: none;
+  }
+}

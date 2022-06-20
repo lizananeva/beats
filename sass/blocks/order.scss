@@ -1,0 +1,16 @@
+.order {
+  background: $black url("../img/bg/order.png") center / cover no-repeat;
+  color: $white;
+  position: relative;
+
+  &::before {
+    content: url("../img/decoration/pentagon.svg");
+    position: absolute;
+    top: -24px;
+    right: 7%;
+  }
+}
+
+.order__form {
+  margin-top: 58px;
+}

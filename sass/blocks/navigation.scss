@@ -1,0 +1,20 @@
+.navigation {
+  @include alegreya;
+}
+
+.navigation__list {
+  display: flex;
+}
+
+.navigation__item {
+  &:not(:last-child) {
+    margin-right: 27px;
+  }
+}
+
+.navigation__link {
+  font-size: 18px;
+  line-height: 30px;
+  color: inherit;
+  text-decoration: none;
+}

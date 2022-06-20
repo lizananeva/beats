@@ -1,0 +1,33 @@
+.header {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+
+// .header__logo {}
+
+// .header__logo-icon {}
+
+// .header__navigation {}
+
+.header__phone {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header__phone-icon {
+  margin-right: 6px;
+}
+
+.header__phone-number {
+  font-size: 18px;
+  line-height: 18px;
+  color: inherit;
+}
+
+.header__hamburger {
+  display: none;
+}

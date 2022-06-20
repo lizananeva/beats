@@ -1,0 +1,72 @@
+.intro {
+  position: relative;
+  background-color: #F5F5F5;
+
+  &::before {
+    content: url("../img/decoration/rectangle.svg");
+    position: absolute;
+    bottom: -28px;
+    right: 8%;
+  }
+}
+
+.intro__content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.intro__caption {
+  width: 42%;
+}
+
+.intro__title {
+  padding-top: 47px;
+  padding-bottom: 22.5px;
+}
+
+.intro__subtitle {
+  width: 85%;
+  @include alegreya;
+  font-size: 21px;
+  line-height: 25px;
+  margin-bottom: 35px;
+}
+
+.intro__button {
+  margin-bottom: 68px;
+}
+
+.intro__features {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  display: flex;
+}
+
+.intro__feature {
+  display: flex;
+  align-items: center;
+  line-height: 18px;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.intro__feature-icon {
+  margin-right: 11px;
+}
+
+.intro__feature-text {
+  width: 114px;
+}
+
+.intro__picture {
+  width: 56%;
+}
+
+.intro__pic {
+  margin: 0 auto;
+}

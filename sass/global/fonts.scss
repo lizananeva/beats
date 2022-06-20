@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Play";
+  font-weight: 400;
+  font-style: normal;
+  src:
+    local("Play Regular"),
+    url("../fonts/Play/Play-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Play";
+  font-weight: 700;
+  font-style: normal;
+  src:
+    local("Play Bold"),
+    url("../fonts/Play/Play-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Alegreya Sans";
+  font-weight: 400;
+  font-style: normal;
+  src:
+    local("Alegreya Sans Regular"),
+    url("../fonts/AlegreyaSans/AlegreyaSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Alegreya Sans";
+  font-weight: 700;
+  font-style: normal;
+  src:
+    local("Alegreya Sans Bold"),
+    url("../fonts/AlegreyaSans/AlegreyaSans-Bold.ttf") format("truetype");
+}

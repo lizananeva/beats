@@ -1,0 +1,19 @@
+// import globals
+@import "global/normalize.scss";
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/mixin.scss";
+@import "global/layout.scss";
+
+// import blocks
+@import "blocks/intro.scss";
+@import "blocks/header.scss";
+@import "blocks/navigation.scss";
+@import "blocks/title.scss";
+@import "blocks/button.scss";
+@import "blocks/benefits.scss";
+@import "blocks/reviews.scss";
+@import "blocks/order.scss";
+@import "blocks/form.scss";
+@import "blocks/radio.scss";
+@import "blocks/fixed-menu.scss";
