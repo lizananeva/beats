@@ -1,0 +1,39 @@
+.phone {
+  display: flex;
+  align-items: baseline;
+  text-decoration: none;
+  white-space: nowrap;
+
+  @include phones {
+    justify-content: center;
+  }
+}
+
+.phone-icon {
+  fill: $black;
+  flex-shrink: 0;
+  margin-right: rem(6px);
+
+  @include tablets {
+    fill: $red;
+  }
+
+  @include phones {
+    fill: $black;
+  }
+}
+
+.phone-number {
+  font-size: rem(18px);
+  line-height: 1;
+  color: inherit;
+
+  @include tablets {
+    color: $red;
+  }
+
+  @include phones {
+    font-size: rem(16px);
+    color: $black;
+  }
+}

@@ -1,33 +1,70 @@
 .header {
-  min-height: 64px;
+  min-height: rem(64px);
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
-  padding-top: 24px;
+  padding-top: rem(24px);
+
+  @include tablets {
+    align-items: center;
+  }
 }
 
-// .header__logo {}
-
-// .header__logo-icon {}
-
-// .header__navigation {}
-
-.header__phone {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
+.header__logo {
+  align-self: flex-start;
 }
 
-.header__phone-icon {
-  margin-right: 6px;
+.header__logo-icon {
+  display: block;
+  fill: $red;
 }
 
-.header__phone-number {
-  font-size: 18px;
-  line-height: 18px;
-  color: inherit;
+.header__navigation {
+  flex: 1;
+  padding-top: rem(4px);
+  margin: 0 rem(14px);
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.header__phone.phone {
+  @include tablets {
+    display: none;
+  }
 }
 
 .header__hamburger {
+  position: relative;
+  background-color: transparent;
+  height: rem(24px);
+  padding: rem(2px);
+  margin-right: rem(-2px);
   display: none;
+
+  @include tablets {
+    display: block;
+  }
+}
+
+.header__hamburger-plank {
+  &, &::before, &::after {
+    content: "";
+    display: block;
+    width: rem(26px);
+    height: rem(4px);
+    border-radius: 10px;
+    background-color: $black;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+  }
 }

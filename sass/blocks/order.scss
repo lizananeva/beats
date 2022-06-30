@@ -6,11 +6,20 @@
   &::before {
     content: url("../img/decoration/pentagon.svg");
     position: absolute;
-    top: -24px;
+    top: rem(-24px);
     right: 7%;
   }
 }
 
 .order__form {
-  margin-top: 58px;
+  margin-top: rem(58px);
+
+  @include tablets {
+    max-width: rem(466px); // 468px
+    margin: rem(30px) auto 0; // 32px
+  }
+
+  @include phones {
+    margin-top: rem(40px);
+  }
 }

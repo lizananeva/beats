@@ -1,16 +1,22 @@
 .button {
   display: inline-block;
-  padding: 16px 42.5px;
+  padding: rem(21px) rem(42px);
   border-radius: 100px;
   background-color: $red;
   color: $white;
+  font-size: $baseFontSize;
+  line-height: rem(18px);
   text-decoration: none;
   text-transform: uppercase;
 
   &--reset {
-    line-height: 19px;
-    padding: 2px;
+    line-height: rem(19px);
+    padding: rem(2px);
     background-color: transparent;
     text-transform: none;
+
+    @include tablets {
+      color: $red;
+    }
   }
 }

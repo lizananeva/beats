@@ -7,3 +7,11 @@ $white: #FFFFFF;
 // base params
 $baseFontSize: 16px;
 $baseTextColor: $grey;
+
+// breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+// z-indexes
+$baseZIndex: 1;
+$lowerZIndex: 0;

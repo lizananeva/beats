@@ -1,7 +1,7 @@
 .title {
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: 700;
-  line-height: 52px;
+  line-height: rem(52px);
   text-transform: uppercase;
 
   &--centered {
@@ -10,5 +10,10 @@
 
   &--color--white {
     color: $white;
+  }
+
+  @include phones {
+    font-size: rem(32px);
+    line-height: rem(36px);
   }
 }

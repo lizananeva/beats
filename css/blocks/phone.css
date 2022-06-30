@@ -1,0 +1,19 @@
+.phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.phone-icon {
+  margin-right: 6px;
+}
+
+.phone-number {
+  font-size: 18px;
+  line-height: 18px;
+  color: inherit;
+}

@@ -4,23 +4,34 @@
   &::before {
     content: url("../img/decoration/triangle.svg");
     position: absolute;
-    bottom: -21px;
+    bottom: rem(-21px);
     left: 5%;
   }
 }
 
 .benefits__subtitle {
-  padding: 0 18%;
+  max-width: rem(600px);
   color: $baseTextColor;
-  line-height: 19px;
+  line-height: rem(19px);
   text-align: center;
-  margin-top: 18px;
-  margin-bottom: 62px;
+  margin: rem(18px) auto rem(62px);
+
+  @include tablets {
+    margin: rem(10px) auto rem(52px);
+  }
+
+  @include phones {
+    margin-bottom: 11vw;
+  }
 }
 
 .benefits__list {
   display: flex;
   justify-content: space-between;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .benefits__item {
@@ -32,7 +43,7 @@
     &::before {
       content: url("../img/decoration/separator.png");
       position: absolute;
-      top: 60px;
+      top: rem(60px);
       right: 0;
       transform: translateX(50%);
     }
@@ -45,16 +56,44 @@
   &:last-child {
     padding-right: 0;
   }
+
+  @include tablets {
+    padding: 0 2.5%;
+
+    &::before {
+      content: "";
+      display: none;
+    }
+  }
+
+  @include phones {
+    display: flex;
+    align-items: center;
+    padding: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 6.9vw;
+    }
+  }
 }
 
 .benefits__picture {
-  width: 128px;
-  height: 128px;
+  width: rem(128px);
+  height: rem(128px);
   border-radius: 50%;
   background-color: #F2F5F4;
   display: flex;
-  margin: 0 auto;
-  margin-bottom: 24px;
+  margin: 0 auto rem(24px);
+
+  @include phones {
+    max-width: rem(128px);
+    max-height: rem(128px);
+    width: 32vw;
+    height: 32vw;
+    flex-shrink: 0;
+    margin-right: rem(12px);
+    margin-bottom: 0;
+  }
 }
 
 .benefits__icon {
@@ -63,17 +102,33 @@
 
 .benefits__desc {
   text-align: center;
+
+  @include phones {
+    text-align: left;
+  }
 }
 
 .benefits__desc-title {
-  font-size: 24px;
+  font-size: rem(24px);
   font-weight: 700;
-  line-height: 28px;
-  margin-bottom: 6px;
+  line-height: rem(28px);
+  margin-bottom: rem(6px);
+
+  @include tablets {
+    margin-bottom: rem(20px);
+  }
+
+  @include phones {
+    margin-bottom: rem(6px);
+  }
 }
 
 .benefits__desc-text {
   color: $baseTextColor;
-  line-height: 19px;
-  padding: 0 14px;
+  line-height: rem(19px);
+  padding: 0 rem(14px);
+
+  @include tablets {
+    padding: 0;
+  }
 }

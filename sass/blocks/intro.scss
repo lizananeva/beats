@@ -5,7 +5,7 @@
   &::before {
     content: url("../img/decoration/rectangle.svg");
     position: absolute;
-    bottom: -28px;
+    bottom: rem(-28px);
     right: 8%;
   }
 }
@@ -15,58 +15,120 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
+
+  @include tablets {
+    flex-direction: column-reverse;
+    margin-top: rem(134px); // auto
+  }
+
+  @include phones {
+    margin-top: rem(44px); // auto
+  }
 }
 
 .intro__caption {
-  width: 42%;
+  max-width: 50%;
+  flex: .78;
+  padding-bottom: 13%;
+  z-index: $baseZIndex;
+
+  @include tablets {
+    max-width: 100%;
+    flex: 1;
+    padding-bottom: 0;
+    text-align: center;
+  }
 }
 
 .intro__title {
-  padding-top: 47px;
-  padding-bottom: 22.5px;
+  padding: rem(46px) 0 rem(22.5px);
+
+  @include tablets {
+    max-width: rem(680px);
+    padding: rem(64px) 0 rem(5px);
+  }
+
+  @include phones {
+    max-width: rem(300px); // 290px
+    padding: rem(48px) 0 rem(14px);
+    margin: 0 auto;
+  }
 }
 
 .intro__subtitle {
-  width: 85%;
-  @include alegreya;
-  font-size: 21px;
-  line-height: 25px;
-  margin-bottom: 35px;
-}
+  max-width: rem(340px);
+  @include alegreyaSans;
+  font-size: rem(21px);
+  line-height: rem(25px);
+  margin-bottom: rem(32px);
 
-.intro__button {
-  margin-bottom: 68px;
+  @include tablets {
+    margin: 0 auto rem(24px);
+  }
+
+  @include phones {
+    max-width: rem(324px); // 290px
+    @include play;
+    font-size: rem(18px);
+    line-height: rem(20px);
+    margin-bottom: rem(27px);
+  }
 }
 
 .intro__features {
   position: absolute;
-  bottom: 15px;
+  bottom: rem(15px);
   left: 0;
   display: flex;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .intro__feature {
   display: flex;
   align-items: center;
-  line-height: 18px;
+  line-height: rem(18px);
 
   &:not(:last-child) {
-    margin-right: 8px;
+    margin-right: rem(8px);
   }
 }
 
 .intro__feature-icon {
-  margin-right: 11px;
+  fill: $black;
+  margin-right: rem(11px);
 }
 
 .intro__feature-text {
-  width: 114px;
+  width: rem(114px);
 }
 
 .intro__picture {
-  width: 56%;
+  min-width: 50%;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  z-index: $lowerZIndex;
+
+  @include tablets {
+    width: 100%;
+    z-index: $baseZIndex;
+  }
 }
 
 .intro__pic {
+  width: rem(489px);
+  height: auto;
   margin: 0 auto;
+
+  @include tablets {
+    width: rem(323px);
+    height: rem(323px);
+  }
+
+  @include phones {
+    height: auto;
+  }
 }

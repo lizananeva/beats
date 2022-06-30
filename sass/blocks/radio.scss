@@ -30,18 +30,18 @@
 }
 
 .radio__visible {
-  width: 25px;
-  height: 25px;
+  width: rem(25px);
+  height: rem(25px);
   border-radius: 50%;
   background-color: $white;
-  margin-right: 10px;
+  margin-right: rem(10px);
   position: relative;
 
   &::before {
     content: "";
     display: none;
-    width: 13px;
-    height: 13px;
+    width: rem(13px);
+    height: rem(13px);
     border-radius: 50%;
     background-color: $red;
     position: absolute;

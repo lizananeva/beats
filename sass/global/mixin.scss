@@ -1,7 +1,11 @@
-@mixin play-font() {
+@mixin play() {
   font-family: "Play", Arial, Helvetica, sans-serif;
 }
 
-@mixin alegreya() {
+@mixin alegreyaSans() {
   font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
+}
+
+@mixin openSans() {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
