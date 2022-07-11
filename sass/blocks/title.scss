@@ -4,16 +4,26 @@
   line-height: rem(52px);
   text-transform: uppercase;
 
+  @include phones {
+    font-size: rem(32px);
+    line-height: rem(36px);
+  }
+
   &--centered {
     text-align: center;
   }
 
-  &--color--white {
-    color: $white;
+  &--reduced {
+    font-size: rem(36px);
+    line-height: rem(42px);
+
+    @include tablets {
+      font-size: rem(28px);
+      line-height: rem(32px);
+    }
   }
 
-  @include phones {
-    font-size: rem(32px);
-    line-height: rem(36px);
+  &--color--white {
+    color: $white;
   }
 }

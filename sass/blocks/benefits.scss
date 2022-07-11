@@ -11,8 +11,7 @@
 
 .benefits__subtitle {
   max-width: rem(600px);
-  color: $baseTextColor;
-  line-height: rem(19px);
+  @include baseText;
   text-align: center;
   margin: rem(18px) auto rem(62px);
 
@@ -124,8 +123,7 @@
 }
 
 .benefits__desc-text {
-  color: $baseTextColor;
-  line-height: rem(19px);
+  @include baseText;
   padding: 0 rem(14px);
 
   @include tablets {

@@ -107,8 +107,7 @@
 
 .reviews__text {
   max-width: rem(464px); // 467px
-  color: $baseTextColor;
-  line-height: rem(19px);
+  @include baseText;
   margin-bottom: rem(40px);
 
   @include tablets {

@@ -66,7 +66,7 @@
               </li>
               <li class="intro__feature">
                 <svg class="intro__feature-icon" width="41" height="41">
-                  <use xlink:href="img/sprite.svg#charging"></use>
+                  <use xlink:href="img/sprite.svg#power"></use>
                 </svg>
                 <span class="intro__feature-text">До 40 часов работы</span>
               </li>
@@ -143,6 +143,100 @@
             </div>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="section headphones">
+      <div class="container">
+        <div class="headphones__display">
+          <button class="headphones__arrow headphones__arrow--prev" type="button" aria-label="К предыдущей модели">
+            <svg class="headphones__arrow-icon" width="24" height="40">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+          <ul class="headphones__list">
+            <li class="headphones__item">
+              <div class="headphones__column">
+                <img class="headphones__picture"
+                  width="452px"
+                  height="452px"
+                  src="img/content/headphones/Beats-Solo-3-Silver.png"
+                  alt="Модель наушников Beats Solo 3 в цвете Атласное серебро">
+              </div>
+              <div class="headphones__column">
+                <div class="headphones__details details">
+                  <button class="details__button" type="button">
+                    <svg class="details__icon details__icon--button" width="42" height="42">
+                      <use xlink:href="img/sprite.svg#gear"></use>
+                    </svg>
+                  </button>
+                  <div class="details__dropdown">
+                    <ul class="details__list">
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#bluetooth"></use>
+                        </svg>
+                        <span class="details__name">Bluetooth</span>
+                        <span class="details__value">4.0</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#distance"></use>
+                        </svg>
+                        <span class="details__name">Дальность</span>
+                        <span class="details__value">12м</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#charging"></use>
+                        </svg>
+                        <span class="details__name">Зарядка</span>
+                        <span class="details__value">3ч</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#weight"></use>
+                        </svg>
+                        <span class="details__name">Вес</span>
+                        <span class="details__value">215гр</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#warranty"></use>
+                        </svg>
+                        <span class="details__name">Гарантия</span>
+                        <span class="details__value">1 год</span>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+              <h2 class="title title--reduced">Beats Solo 3. Цвет <span class="headphones__subtitle">«Атласное серебро»</span></h2>
+              <p class="headphones__desc">
+                Беспроводные наушники Beats Solo3 готовы к
+                работе в любой момент. Включите их и поднесите
+                к своему iPhone — они мгновенно подключатся к нему.
+              </p>
+              <div class="headphones__specs">
+                <dl class="headphones__specs-block">
+                  <dt class="headphones__specs-name">Зарядка</dt>
+                  <dd class="headphones__specs-value">2 часа</dd>
+                </dl>
+                <dl class="headphones__specs-block">
+                  <dt class="headphones__specs-name">Вес</dt>
+                  <dd class="headphones__specs-value">215 грамм</dd>
+                </dl>
+              </div>
+              <div class="headphones__order">
+                <span class="headphones__price">14 990 ₽</span>
+                <a class="button" href="#">Заказать</a>
+              </div>
+            </li>
+          </ul>
+          <button class="headphones__arrow headphones__arrow--next" type="button" aria-label="К следующей модели">
+            <svg class="headphones__arrow-icon" width="24" height="40">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
     <section class="section reviews">
@@ -341,6 +435,39 @@
         </li>
       </ul>
     </nav>
+    <div class="overlay">
+      <nav class="navigation navigation--overlay">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">О нас</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Наушники</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Команда</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Цвета</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Отзывы</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Как мы работаем</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="overlay__close" type="button" aria-label="Закрыть">
+        <svg class="overlay__close-icon" width="20" height="20">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
   </div>
+  <script src="js/main.js"></script>
 </body>
 </html>

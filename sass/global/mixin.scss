@@ -9,3 +9,9 @@
 @mixin openSans() {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
+
+@mixin baseText {
+  color: $grey;
+  font-size: rem(16px);
+  line-height: rem(19px);
+}

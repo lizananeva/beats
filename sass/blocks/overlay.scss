@@ -1,0 +1,36 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $overlayZIndex;
+  background-color: rgba(#333537, 1);
+  // transition: opacity .3s;
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+  &--active {
+      display: flex;
+      overflow-y: auto;
+
+      // body {overflow: hidden;}
+  }
+}
+
+.overlay__close {
+  position: absolute;
+  top: rem(40px);
+  right: rem(40px);
+  background-color: transparent;
+  padding: rem(2px);
+  line-height: 0;
+}
+
+.overlay__close-icon {
+  width: rem(20px);
+  height: rem(20px);
+  fill: $white;
+  opacity: .7;
+}
