@@ -2,11 +2,11 @@
   background-color: #F8FAF9;
   position: relative;
 
-  &::after {
-    content: url("../img/decoration/square.svg");
+  &::before {
+    content: url("../img/decoration/triangle.svg");
     position: absolute;
-    bottom: rem(-23px);
-    right: 10%;
+    top: rem(-22px);
+    left: 5%;
   }
 }
 
@@ -22,7 +22,7 @@
   }
 
   &--next {
-    right: -0.2vw; // right: -3.2vw;
+    right: -0.2vw; // -3.2vw
 
     .headphones__arrow-icon {
       transform: rotate(-180deg);
@@ -65,12 +65,11 @@
 
 .headphones__list {
   display: flex;
-  justify-content: center;
 }
 
 .headphones__item {
   width: 100%;
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
 
   @include tablets {
@@ -81,23 +80,21 @@
 
 .headphones__column {
   width: 49%;
-  height: 100%;
+  min-height: rem(516px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
 
   &:first-child {
-    // flex-shrink: 0.55;
     margin-right: rem(10px);
   }
 
   &:last-child {
     max-width: rem(420px);
-    padding-bottom: rem(60px);
   }
 
   @include tablets {
     width: 100%;
+    min-height: unset;
     align-items: center;
     text-align: center;
 
@@ -107,8 +104,11 @@
     }
 
     &:last-child {
-      max-width: 100%;
       padding: 0;
+    }
+
+    &:first-child, &:last-child {
+      max-width: rem(624px);
     }
   }
 
@@ -122,11 +122,12 @@
 .headphones__picture {
   width: rem(452px);
   height: auto;
-  margin-left: auto;
+  margin: auto;
+  margin-right: 0;
 
   @include tablets {
     width: rem(306px);
-    margin-left: 0;
+    margin: 0;
   }
 }
 
@@ -151,7 +152,7 @@
 
   @include tablets {
     width: 100%;
-    max-width: rem(630px);
+    max-width: rem(612px);
     margin: rem(14px) 0 rem(27px);
   }
 
@@ -223,7 +224,7 @@
   }
 
   @include phones {
-    font-size: rem(30px); // font-size: rem(32px);
+    font-size: rem(30px); // 32px
     margin-right: rem(5px);
   }
 }

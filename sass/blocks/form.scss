@@ -68,7 +68,7 @@
   line-height: rem(20px);
   outline: none;
 
-  &:focus {
+  &:focus, &.input-error {
     border-color: $red;
   }
 

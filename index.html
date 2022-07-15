@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beats</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -83,7 +85,8 @@
               width="489px"
               height="489px"
               src="img/content/intro/Beats-Solo-3.png"
-              alt="Модель наушников Beats Solo 3">
+              alt="Модель наушников Beats Solo 3"
+            >
           </div>
         </div>
       </div>
@@ -148,11 +151,6 @@
     <section class="section headphones">
       <div class="container">
         <div class="headphones__display">
-          <button class="headphones__arrow headphones__arrow--prev" type="button" aria-label="К предыдущей модели">
-            <svg class="headphones__arrow-icon" width="24" height="40">
-              <use xlink:href="img/sprite.svg#arrow"></use>
-            </svg>
-          </button>
           <ul class="headphones__list">
             <li class="headphones__item">
               <div class="headphones__column">
@@ -218,6 +216,83 @@
               <div class="headphones__specs">
                 <dl class="headphones__specs-block">
                   <dt class="headphones__specs-name">Зарядка</dt>
+                  <dd class="headphones__specs-value">3 часа</dd>
+                </dl>
+                <dl class="headphones__specs-block">
+                  <dt class="headphones__specs-name">Вес</dt>
+                  <dd class="headphones__specs-value">215 грамм</dd>
+                </dl>
+              </div>
+              <div class="headphones__order">
+                <span class="headphones__price">14 990 ₽</span>
+                <a class="button" href="#">Заказать</a>
+              </div>
+            </li>
+            <li class="headphones__item">
+              <div class="headphones__column">
+                <img class="headphones__picture"
+                  width="452px"
+                  height="452px"
+                  src="img/content/headphones/Beats-Solo-3-Red.png"
+                  alt="Модель наушников Beats Solo 3 в цвете Club Red">
+              </div>
+              <div class="headphones__column">
+                <div class="headphones__details details">
+                  <button class="details__button" type="button">
+                    <svg class="details__icon details__icon--button" width="42" height="42">
+                      <use xlink:href="img/sprite.svg#gear"></use>
+                    </svg>
+                  </button>
+                  <div class="details__dropdown">
+                    <ul class="details__list">
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#bluetooth"></use>
+                        </svg>
+                        <span class="details__name">Bluetooth</span>
+                        <span class="details__value">4.0</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#distance"></use>
+                        </svg>
+                        <span class="details__name">Дальность</span>
+                        <span class="details__value">10м</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#charging"></use>
+                        </svg>
+                        <span class="details__name">Зарядка</span>
+                        <span class="details__value">2ч</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#weight"></use>
+                        </svg>
+                        <span class="details__name">Вес</span>
+                        <span class="details__value">215гр</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#warranty"></use>
+                        </svg>
+                        <span class="details__name">Гарантия</span>
+                        <span class="details__value">1 год</span>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+              <h2 class="title title--reduced">Beats Solo 3. Цвет <span class="headphones__subtitle">«Club Red»</span></h2>
+              <p class="headphones__desc">
+                Беспроводные наушники Solo Pro помогают настроиться
+                на творчество. Для этого предусмотрено два режима
+                прослушивания: режим с активным шумоподавлением и
+                Прозрачный режим.
+              </p>
+              <div class="headphones__specs">
+                <dl class="headphones__specs-block">
+                  <dt class="headphones__specs-name">Зарядка</dt>
                   <dd class="headphones__specs-value">2 часа</dd>
                 </dl>
                 <dl class="headphones__specs-block">
@@ -230,13 +305,393 @@
                 <a class="button" href="#">Заказать</a>
               </div>
             </li>
+            <li class="headphones__item">
+              <div class="headphones__column">
+                <img class="headphones__picture"
+                  width="452px"
+                  height="452px"
+                  src="img/content/headphones/Beats-Solo-3-Citrus.png"
+                  alt="Модель наушников Beats Solo 3 в цвете Красный цитрус">
+              </div>
+              <div class="headphones__column">
+                <div class="headphones__details details">
+                  <button class="details__button" type="button">
+                    <svg class="details__icon details__icon--button" width="42" height="42">
+                      <use xlink:href="img/sprite.svg#gear"></use>
+                    </svg>
+                  </button>
+                  <div class="details__dropdown">
+                    <ul class="details__list">
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#bluetooth"></use>
+                        </svg>
+                        <span class="details__name">Bluetooth</span>
+                        <span class="details__value">4.0</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#distance"></use>
+                        </svg>
+                        <span class="details__name">Дальность</span>
+                        <span class="details__value">13м</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#charging"></use>
+                        </svg>
+                        <span class="details__name">Зарядка</span>
+                        <span class="details__value">2ч</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#weight"></use>
+                        </svg>
+                        <span class="details__name">Вес</span>
+                        <span class="details__value">215гр</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#warranty"></use>
+                        </svg>
+                        <span class="details__name">Гарантия</span>
+                        <span class="details__value">1 год</span>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+              <h2 class="title title--reduced">Beats Solo 3. Цвет <span class="headphones__subtitle">«Красный цитрус»</span></h2>
+              <p class="headphones__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Fugit et possimus rem cupiditate ab natus, velit
+                vero, non fuga maiores nam blanditiis, officiis cumque.
+              </p>
+              <div class="headphones__specs">
+                <dl class="headphones__specs-block">
+                  <dt class="headphones__specs-name">Зарядка</dt>
+                  <dd class="headphones__specs-value">2 часа</dd>
+                </dl>
+                <dl class="headphones__specs-block">
+                  <dt class="headphones__specs-name">Вес</dt>
+                  <dd class="headphones__specs-value">215 грамм</dd>
+                </dl>
+              </div>
+              <div class="headphones__order">
+                <span class="headphones__price">15 990 ₽</span>
+                <a class="button" href="#">Заказать</a>
+              </div>
+            </li>
+            <li class="headphones__item">
+              <div class="headphones__column">
+                <img class="headphones__picture"
+                  width="452px"
+                  height="452px"
+                  src="img/content/headphones/Beats-Solo-3-Black.png"
+                  alt="Модель наушников Beats Solo 3 в цвете Матовый черный">
+              </div>
+              <div class="headphones__column">
+                <div class="headphones__details details">
+                  <button class="details__button" type="button">
+                    <svg class="details__icon details__icon--button" width="42" height="42">
+                      <use xlink:href="img/sprite.svg#gear"></use>
+                    </svg>
+                  </button>
+                  <div class="details__dropdown">
+                    <ul class="details__list">
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#bluetooth"></use>
+                        </svg>
+                        <span class="details__name">Bluetooth</span>
+                        <span class="details__value">4.0</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#distance"></use>
+                        </svg>
+                        <span class="details__name">Дальность</span>
+                        <span class="details__value">11м</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#charging"></use>
+                        </svg>
+                        <span class="details__name">Зарядка</span>
+                        <span class="details__value">1.5ч</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#weight"></use>
+                        </svg>
+                        <span class="details__name">Вес</span>
+                        <span class="details__value">215гр</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#warranty"></use>
+                        </svg>
+                        <span class="details__name">Гарантия</span>
+                        <span class="details__value">1 год</span>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+              <h2 class="title title--reduced">Beats Solo 3. Цвет <span class="headphones__subtitle">«Матовый черный»</span></h2>
+              <p class="headphones__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Reprehenderit ad tenetur beatae ab nulla non
+                corporis placeat ut maxime, quos officia aliquam dolores.
+              </p>
+              <div class="headphones__specs">
+                <dl class="headphones__specs-block">
+                  <dt class="headphones__specs-name">Зарядка</dt>
+                  <dd class="headphones__specs-value">1.5 часа</dd>
+                </dl>
+                <dl class="headphones__specs-block">
+                  <dt class="headphones__specs-name">Вес</dt>
+                  <dd class="headphones__specs-value">215 грамм</dd>
+                </dl>
+              </div>
+              <div class="headphones__order">
+                <span class="headphones__price">11 990 ₽</span>
+                <a class="button" href="#">Заказать</a>
+              </div>
+            </li>
+            <li class="headphones__item">
+              <div class="headphones__column">
+                <img class="headphones__picture"
+                  width="452px"
+                  height="452px"
+                  src="img/content/headphones/Beats-Solo-3-Mickey.png"
+                  alt="Модель наушников Beats Solo 3 в цвете Mickey’s 90th Anniversary">
+              </div>
+              <div class="headphones__column">
+                <div class="headphones__details details">
+                  <button class="details__button" type="button">
+                    <svg class="details__icon details__icon--button" width="42" height="42">
+                      <use xlink:href="img/sprite.svg#gear"></use>
+                    </svg>
+                  </button>
+                  <div class="details__dropdown">
+                    <ul class="details__list">
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#bluetooth"></use>
+                        </svg>
+                        <span class="details__name">Bluetooth</span>
+                        <span class="details__value">4.0</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#distance"></use>
+                        </svg>
+                        <span class="details__name">Дальность</span>
+                        <span class="details__value">14м</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#charging"></use>
+                        </svg>
+                        <span class="details__name">Зарядка</span>
+                        <span class="details__value">2ч</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#weight"></use>
+                        </svg>
+                        <span class="details__name">Вес</span>
+                        <span class="details__value">215гр</span>
+                      </li>
+                      <li class="details__item">
+                        <svg class="details__icon" width="32" height="32">
+                          <use xlink:href="img/sprite.svg#warranty"></use>
+                        </svg>
+                        <span class="details__name">Гарантия</span>
+                        <span class="details__value">1 год</span>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+              <h2 class="title title--reduced">Beats Solo 3. Цвет <span class="headphones__subtitle">«Mickey’s 90th Anniversary»</span></h2>
+              <p class="headphones__desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Veritatis, reiciendis perferendis laborum culpa. Voluptates
+                laboriosam dolore aliquam quasi quisquam.
+              </p>
+              <div class="headphones__specs">
+                <dl class="headphones__specs-block">
+                  <dt class="headphones__specs-name">Зарядка</dt>
+                  <dd class="headphones__specs-value">2 часа</dd>
+                </dl>
+                <dl class="headphones__specs-block">
+                  <dt class="headphones__specs-name">Вес</dt>
+                  <dd class="headphones__specs-value">215 грамм</dd>
+                </dl>
+              </div>
+              <div class="headphones__order">
+                <span class="headphones__price">24 990 ₽</span>
+                <a class="button" href="#">Заказать</a>
+              </div>
+            </li>
           </ul>
-          <button class="headphones__arrow headphones__arrow--next" type="button" aria-label="К следующей модели">
-            <svg class="headphones__arrow-icon" width="24" height="40">
-              <use xlink:href="img/sprite.svg#arrow"></use>
-            </svg>
-          </button>
+          <div class="headphones__arrows">
+            <button class="headphones__arrow headphones__arrow--prev" type="button" aria-label="К предыдущей модели">
+              <svg class="headphones__arrow-icon" width="24" height="40">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+            <button class="headphones__arrow headphones__arrow--next" type="button" aria-label="К следующей модели">
+              <svg class="headphones__arrow-icon" width="24" height="40">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
+      </div>
+    </section>
+    <section class="section team">
+      <div class="container">
+        <h2 class="title title--centered">Команда</h2>
+        <ul class="team__accordeon team__accordeon--version--desktop">
+          <li class="team__item">
+            <img class="team__image"
+              width="220px"
+              height="290px"
+              src="img/content/team/team-member-1.png"
+              alt="Борис Федорович, член нашей команды"
+            >
+            <button class="team__trigger" type="button">
+              <h3 class="team__trigger-title">Борис Федорович</h3>
+            </button>
+            <div class="team__inner">
+              <div class="team__inner-block">
+                <span class="team__occ">Главный технолог</span>
+                <div class="team__desc">Отвечает за вкусовые качества и калорийность.</div>
+              </div>
+            </div>
+          </li>
+          <li class="team__item">
+            <img class="team__image"
+              width="220px"
+              height="290px"
+              src="img/content/team/team-member-2.png"
+              alt="Алла Иванова, член нашей команды"
+            >
+            <button class="team__trigger" type="button">
+              <h3 class="team__trigger-title">Алла Иванова</h3>
+            </button>
+            <div class="team__inner">
+              <div class="team__inner-block">
+                <span class="team__occ">Специалист по упаковке</span>
+                <div class="team__desc">Автор запоминающегося стиля наших батончиков.</div>
+              </div>
+            </div>
+          </li>
+          <li class="team__item">
+            <img class="team__image"
+              width="220px"
+              height="290px"
+              src="img/content/team/team-member-3.png"
+              alt="Кирилл Матросов, член нашей команды"
+            >
+            <button class="team__trigger" type="button">
+              <h3 class="team__trigger-title">Кирилл Матросов</h3>
+            </button>
+            <div class="team__inner">
+              <div class="team__inner-block">
+                <span class="team__occ">Оператор</span>
+                <div class="team__desc">Разработал дизайн наушников Beats Solo 3.</div>
+              </div>
+            </div>
+          </li>
+          <li class="team__item">
+            <img class="team__image"
+              width="220px"
+              height="290px"
+              src="img/content/team/team-member-4.png"
+              alt="Мила Рыжкова, член нашей команды"
+            >
+            <button class="team__trigger" type="button">
+              <h3 class="team__trigger-title">Мила Рыжкова</h3>
+            </button>
+            <div class="team__inner">
+              <div class="team__inner-block">
+                <span class="team__occ">PR, маркетинг</span>
+                <div class="team__desc">По всем вопросам сотрудничества и рекламы писать только Миле.</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="team__accordeon team__accordeon--version--mobile">
+          <li class="team__item">
+            <button class="team__trigger" type="button">
+              <h3 class="team__trigger-title">Борис Федорович</h3>
+            </button>
+            <div class="team__inner">
+              <div class="team__inner-block">
+                <img class="team__image"
+                  width="220px"
+                  height="290px"
+                  src="img/content/team/team-member-1.png"
+                  alt="Борис Федорович, член нашей команды"
+                >
+                <span class="team__occ">Главный технолог</span>
+                <div class="team__desc">Отвечает за вкусовые качества и калорийность.</div>
+              </div>
+            </div>
+          </li>
+          <li class="team__item">
+            <button class="team__trigger" type="button">
+              <h3 class="team__trigger-title">Алла Иванова</h3>
+            </button>
+            <div class="team__inner">
+              <div class="team__inner-block">
+                <img class="team__image"
+                  width="220px"
+                  height="290px"
+                  src="img/content/team/team-member-2.png"
+                  alt="Борис Федорович, член нашей команды"
+                >
+                <span class="team__occ">Специалист по упаковке</span>
+                <div class="team__desc">Автор запоминающегося стиля наших батончиков.</div>
+              </div>
+            </div>
+          </li>
+          <li class="team__item">
+            <button class="team__trigger" type="button">
+              <h3 class="team__trigger-title">Кирилл Матросов</h3>
+            </button>
+            <div class="team__inner">
+              <div class="team__inner-block">
+                <img class="team__image"
+                  width="220px"
+                  height="290px"
+                  src="img/content/team/team-member-3.png"
+                  alt="Борис Федорович, член нашей команды"
+                >
+                <span class="team__occ">Оператор</span>
+                <div class="team__desc">Разработал дизан наушников Beats Solo 3.</div>
+              </div>
+            </div>
+          </li>
+          <li class="team__item">
+            <button class="team__trigger" type="button">
+              <h3 class="team__trigger-title">Мила Рыжкова</h3>
+            </button>
+            <div class="team__inner">
+              <div class="team__inner-block">
+                <img class="team__image"
+                  width="220px"
+                  height="290px"
+                  src="img/content/team/team-member-4.png"
+                  alt="Борис Федорович, член нашей команды"
+                >
+                <span class="team__occ">PR, маркетинг</span>
+                <div class="team__desc">По всем вопросам сотрудничества и рекламы писать только Миле.</div>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="section reviews">
@@ -244,7 +699,7 @@
         <h2 class="title title--centered">Отзывы</h2>
         <div class="reviews__display">
           <ul class="reviews__list">
-            <li class="reviews__item">
+            <li class="reviews__item active" data-show="one">
               <img class="reviews__avatar" width="253px" height="264px" src="img/content/reviews/review-author-1.png" alt="Фото Билли Айлиш">
               <div class="reviews__content">
                 <h3 class="reviews__title">Отличный звук</h3>
@@ -258,21 +713,48 @@
                 <span class="reviews__author">Билли Айлиш</span>
               </div>
             </li>
+            <li class="reviews__item" data-show="two">
+              <img class="reviews__avatar" width="253px" height="264px" src="img/content/reviews/review-author-2.png" alt="Фото Вадим Грачев">
+              <div class="reviews__content">
+                <h3 class="reviews__title">Крутой дизайн</h3>
+                <p class="reviews__text">
+                  После тренировок всегда хочется быстро закинуться чем-то
+                  белковым, потому что до дома ещё нужно доехать. А кушать
+                  хочется. Протеиновые батончики всегда выручают в этом плане.
+                  Спасибо производителю за этот качественный и экологичный продукт.
+                </p>
+                <span class="reviews__author">Вадим Грачев</span>
+              </div>
+            </li>
+            <li class="reviews__item" data-show="three">
+              <img class="reviews__avatar" width="253px" height="264px" src="img/content/reviews/review-author-3.png" alt="Фото Мария Орлова">
+              <div class="reviews__content">
+                <h3 class="reviews__title">На долго хватает заряда</h3>
+                <p class="reviews__text">
+                  Батончики понравились. На мой взгляд слегка завышена цена по
+                  сравнению с конкурентами, однако, как говорится – оно того
+                  стоит. Нравится носить с собой, нравится держать в руке. Ну и
+                  конечно же, кушать. Идеально утоляют голод, хоть и не надолго.
+                  Через час уже ем ещё один. Но это скорее плюс, чем минус.
+                </p>
+                <span class="reviews__author">Мария Орлова</span>
+              </div>
+            </li>
           </ul>
         </div>
         <ul class="reviews__dots">
-          <li class="reviews__dot reviews__dot--active">
-            <button class="reviews__button" type="button">
+          <li class="reviews__dot active">
+            <button class="reviews__button" type="button" data-pick="one">
               <img class="reviews__mini-avatar" width="74px" height="74px" src="img/content/reviews/review-author-1.png" alt="Мини аватар автора отзыва">
             </button>
           </li>
           <li class="reviews__dot">
-            <button class="reviews__button" type="button">
+            <button class="reviews__button" type="button" data-pick="two">
               <img class="reviews__mini-avatar" width="74px" height="74px" src="img/content/reviews/review-author-2.png" alt="Мини аватар автора отзыва">
             </button>
           </li>
           <li class="reviews__dot">
-            <button class="reviews__button" type="button">
+            <button class="reviews__button" type="button" data-pick="three">
               <img class="reviews__mini-avatar" width="74px" height="74px" src="img/content/reviews/review-author-3.png" alt="Мини аватар автора отзыва">
             </button>
           </li>
@@ -282,40 +764,41 @@
     <section class="section order">
       <div class="container">
         <h2 class="title title--centered title--color--white">Закажите доставку</h2>
-        <form class="order__form form" action="">
+        <form class="order__form form" action="https://webdev-api.loftschool.com/sendmail" method="post">
+          <input type="hidden" name="to" value="somewhere@mail.com">
           <div class="form__column">
             <div class="form__row">
               <label class="form__block">
                 <span class="form__block-title">Имя</span>
-                <input class="form__input" type="text">
+                <input class="form__input" name="name" type="text">
               </label>
               <label class="form__block">
                 <span class="form__block-title">Телефон</span>
-                <input class="form__input" type="tel">
+                <input class="form__input" name="phone" type="tel">
               </label>
             </div>
             <div class="form__row">
               <label class="form__block">
                 <span class="form__block-title">Улица</span>
-                <input class="form__input" type="text">
+                <input class="form__input" name="street" type="text">
               </label>
             </div>
             <div class="form__row">
               <label class="form__block">
                 <span class="form__block-title">Дом</span>
-                <input class="form__input" type="text">
+                <input class="form__input" name="house" type="text">
               </label>
               <label class="form__block">
                 <span class="form__block-title">Корпус</span>
-                <input class="form__input" type="text">
+                <input class="form__input" name="building" type="text">
               </label>
               <label class="form__block">
                 <span class="form__block-title">Квартира</span>
-                <input class="form__input" type="number">
+                <input class="form__input" name="appt" type="number">
               </label>
               <label class="form__block">
                 <span class="form__block-title">Этаж</span>
-                <input class="form__input" type="number">
+                <input class="form__input" name="floor" type="number">
               </label>
             </div>
           </div>
@@ -323,7 +806,7 @@
             <div class="form__row">
               <label class="form__block">
                 <span class="form__block-title">Комментарий</span>
-                <textarea class="form__input form__input--textarea"></textarea>
+                <textarea class="form__input form__input--textarea" name="comment"></textarea>
               </label>
             </div>
             <div class="form__controls form__controls--first-line">
@@ -435,39 +918,52 @@
         </li>
       </ul>
     </nav>
-    <div class="overlay">
-      <nav class="navigation navigation--overlay">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">О нас</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Наушники</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Команда</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Цвета</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Отзывы</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Как мы работаем</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="overlay__close" type="button" aria-label="Закрыть">
-        <svg class="overlay__close-icon" width="20" height="20">
-          <use xlink:href="img/sprite.svg#close"></use>
-        </svg>
-      </button>
+    <div class="fullscreen-menu">
+      <div class="overlay">
+        <nav class="navigation navigation--fullscreen">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">О нас</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Наушники</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Команда</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Цвета</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Отзывы</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Как мы работаем</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="fullscreen-menu__close" type="button" aria-label="Закрыть">
+          <svg class="fullscreen-menu__icon" width="20" height="20">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="modal" id="modal">
+      <div class="overlay">
+        <div class="modal__container">
+          <span class="modal__message">Cообщение отправлено</span>
+          <a class="button app-submit-btn" href="#">Закрыть</a>
+        </div>
+      </div>
     </div>
   </div>
-  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="js/main.js" type="module"></script>
 </body>
 </html>

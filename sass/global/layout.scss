@@ -11,13 +11,13 @@ body {
 body {
   @include play;
   line-height: 1.42;
+  color: $black;
 }
 
 .wrapper {
   width: 100%;
   min-height: 100%;
   position: relative;
-  // overflow: hidden;
 }
 
 .section {

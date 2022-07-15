@@ -1,13 +1,5 @@
 .intro {
-  position: relative;
   background-color: #F5F5F5;
-
-  &::before {
-    content: url("../img/decoration/rectangle.svg");
-    position: absolute;
-    bottom: rem(-28px);
-    right: 8%;
-  }
 }
 
 .intro__content {

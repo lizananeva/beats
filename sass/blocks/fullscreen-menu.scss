@@ -1,0 +1,23 @@
+.fullscreen-menu {
+  display: none;
+}
+
+.fullscreen-menu.active {
+  display: block;
+}
+
+.fullscreen-menu__close {
+  position: absolute;
+  top: rem(31px);
+  right: rem(36px);
+  background-color: transparent;
+  padding: rem(3px);
+  line-height: 0;
+}
+
+.fullscreen-menu__icon {
+  width: rem(20px);
+  height: rem(20px);
+  fill: $white;
+  opacity: .7;
+}

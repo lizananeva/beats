@@ -2,10 +2,10 @@
   position: relative;
 
   &::before {
-    content: url("../img/decoration/triangle.svg");
+    content: url("../img/decoration/rectangle.svg");
     position: absolute;
-    bottom: rem(-21px);
-    left: 5%;
+    top: rem(-23px);
+    right: 8%;
   }
 }
 

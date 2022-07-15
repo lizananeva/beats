@@ -1,0 +1,9 @@
+.team__accordeon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team__image {
+  margin-bottom: rem(25px);
+}

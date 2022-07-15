@@ -1,0 +1,170 @@
+.team {
+  position: relative;
+
+  &::before {
+    content: url("../img/decoration/square.svg");
+    position: absolute;
+    top: rem(-12px);
+    right: 10%;
+  }
+}
+
+.team__accordeon {
+  display: flex;
+  justify-content: space-between;
+  margin-top: rem(53px);
+
+  &--version--desktop {
+    .team__inner {
+      position: absolute;
+      top: 100%;
+    }
+  }
+
+  &--version--mobile {
+    display: none;
+  }
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: rem(34px);
+
+    &--version--desktop {
+      display: none;
+    }
+
+    &--version--mobile {
+      display: flex;
+    }
+  }
+
+  @include phones {
+    margin-top: rem(36px);
+  }
+}
+
+.team__item {
+  position: relative;
+  max-width: rem(220px);
+  flex: 1;
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-right: rem(7px);
+  }
+
+  @include tablets {
+    width: 100%;
+    flex: initial;
+
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: rem(16px);
+    }
+  }
+
+  @include phones {
+    max-width: rem(272px);
+
+    &:not(:last-child) {
+      margin-bottom: rem(6px);
+    }
+  }
+}
+
+.team__image {
+  height: auto;
+  display: inline-block;
+  margin-bottom: rem(20px);
+
+  @include tablets {
+    padding-top: rem(14px); // rem(16px)
+    margin-bottom: rem(17px);
+  }
+
+  @include phones {
+    width: rem(138px);
+    padding-top: rem(14px);
+    margin-bottom: rem(12px);
+  }
+}
+
+.team__trigger {
+  display: inline-flex;
+  align-items: baseline;
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: rem(10px);
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: rem(4.5px) solid transparent;
+    border-right: rem(4.5px) solid transparent;
+    border-top: rem(7px) solid $red;
+    transform: translateY(-1px);
+    margin-left: rem(4px);
+  }
+
+  &--inverted {
+    &::after {
+      transform: rotate(-180deg) translateY(1px);
+    }
+  }
+
+  @include tablets {
+    margin-bottom: 0;
+
+    &::after {
+      border-top-color: #365A49;
+    }
+  }
+
+  @include phones {
+    &::after {
+      border-top-color: $red;
+    }
+  }
+}
+
+.team__trigger-title {
+  font-size: rem(18px);
+  font-weight: 700;
+  line-height: rem(21px);
+
+  @include tablets {
+    @include alegreyaSans;
+    font-size: rem(21px);
+    line-height: rem(25px);
+  }
+}
+
+.team__inner {
+  height: 0;
+  transition: height .3s;
+  overflow: hidden;
+}
+
+.team__inner-block {
+  @include baseText;
+}
+
+.team__occ {
+  display: block;
+  color: $black;
+  margin-bottom: rem(4px);
+
+  @include tablets {
+    font-size: rem(18px);
+    font-weight: 700;
+    line-height: rem(21px);
+    margin-bottom: rem(10px);
+  }
+
+  @include phones {
+    margin-bottom: rem(13px);
+  }
+}

@@ -1,7 +1,7 @@
 .navigation {
   @include alegreyaSans;
 
-  &--overlay {
+  &--fullscreen {
     @include play;
     position: absolute;
     top: 13.6%;
