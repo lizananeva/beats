@@ -1,5 +1,9 @@
 import "./fullscreen-menu.js";
 import "./carousel.js";
 import "./team-accordeon.js";
+import "./colors-accordeon.js";
 import "./reviews-tabs.js";
 import "./form.js";
+import "./player.js";
+import "./map.js";
+import "./ops.js";

@@ -1,0 +1,17 @@
+.our-work {
+  position: relative;
+  background-color: #F8FAF9;
+
+  &::before {
+    content: url("../img/decoration/circle.svg");
+    position: absolute;
+    top: rem(-15px);
+    left: 8%;
+  }
+}
+
+.our-work__player {
+  max-width: rem(660px);
+  height: rem(390px);
+  margin: 0 auto;
+}

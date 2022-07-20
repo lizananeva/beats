@@ -6,6 +6,38 @@
   @include tablets {
     display: none;
   }
+
+  &--theme--chess {
+    .fixed-menu__item--current {
+      .fixed-menu__dot {
+        border-color: $white;
+      }
+
+      .fixed-menu__dot::before {
+        background-color: $white;
+      }
+    }
+
+    .fixed-menu__dot::before {
+      background-color: $black;
+    }
+  }
+
+  &--theme--wine {
+    .fixed-menu__item--current {
+      .fixed-menu__dot {
+        border-color: $red;
+      }
+
+      .fixed-menu__dot::before {
+        background-color: $red;
+      }
+    }
+
+    .fixed-menu__dot::before {
+      background-color: $white;
+    }
+  }
 }
 
 .fixed-menu__item {

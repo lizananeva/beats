@@ -1,0 +1,116 @@
+.colors {
+  position: relative;
+  background: $black url("../img/bg/colors.png") 99% 28% / auto 129% no-repeat;
+  color: $white;
+
+  @include tablets {
+    background-position: 88%;
+    background-size: cover;
+  }
+
+  @include phones {
+    background-position: 72%;
+  }
+}
+
+.colors__title {
+  position: absolute;
+  top: rem(115px);
+  left: rem(84px);
+
+  @include tablets {
+    top: rem(91px);
+    left: rem(40px);
+  }
+
+  @include phones {
+    top: rem(76px);
+    left: rem(10px);
+  }
+}
+
+.colors__accordeon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  @include alegreyaSans;
+}
+
+.colors__item {
+  display: flex;
+  //
+  position: unset;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  //
+}
+
+.colors__trigger {
+  width: rem(102px);
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: inherit;
+
+  &--bg {
+    &--silver {
+      background-color: #999999;
+    }
+
+    &--black {
+      background-color: #151515;
+    }
+
+    &--red {
+      background-color: #E01F3C;
+    }
+  }
+
+  @include tablets {
+    width: rem(96px);
+  }
+
+  @include phones {
+    width: 18.75vw;
+  }
+}
+
+.colors__trigger-title {
+  font-size: rem(36px);
+  font-weight: 700;
+  line-height: rem(43px);
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  padding-top: rem(32px);
+  margin: 0 auto;
+}
+
+.colors__inner {
+  width: 0;
+  transition: width .7s;
+  overflow: hidden;
+}
+
+.colors__container {
+  height: 100%;
+  padding: rem(32px) rem(38px);
+  background-color: rgba(#333537, .9);
+  backdrop-filter: blur(10px);
+
+  @include tablets {
+    padding: rem(38px);
+  }
+
+  @include phones {
+    padding: 7.5vw;
+  }
+}
+
+.colors__desc {
+  font-size: $baseFontSize;
+  line-height: rem(24px);
+}
